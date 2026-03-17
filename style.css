@@ -3,6 +3,24 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     display: flex;
+    flex-direction: row;  /* é a disposição flex-direction padrão, nem precisaria escrevê-la.
+       flex-direction: row-reverse;  em linha, ordem invertida dos elementos HTML
+       flex-direction: column; em coluna, ordem normal dos elementos HTML    
+       flex-direction: column-reverse;  em coluna, ordem inversa dos elementos HTML*/
+    /* justify-content: flex-start;  config padrão, não altera o estabelecido
+                     flex-end; joga o conteúdo p/ o FINAL, a face oposta da caixa (rel. ao estabelecido previamt)
+                     center;  centraliza os elementos da caixa
+                     space-between; intervalos iguais entre elementos, distribuídos de ponta a ponta
+                     space-around: elementos distribuídos com intervalos iguais entre si e TAMBÉM em relação às bordas da caixa
+    importante notar que JUSTIFY-CONTENT reposiciona o elementos no eixo horizontal.
+    enquanto ALIGN-ITEMS reposiciona os elementos no eixo vertical, em relação a altura dentro da caixa. */
+    height: 200px;
+    align-items: flex-start;  /* config padrão, não altera o estabelecido
+                 flex-end; joga o conteúdo p/ o FINAL, a borda oposta da caixa (rel. ao estabelecido previamt), geralmt p/ baixo.
+                 center; centraliza os elementos a meia-altura da caixa
+                 stretch; tbm valor padrão p/ o posicionamt dos elementos, basicamt não altera
+    
+*/
 }
 .box{
     height: 50px;
